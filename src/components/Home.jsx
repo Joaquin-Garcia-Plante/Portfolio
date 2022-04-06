@@ -6,7 +6,9 @@ function Home() {
     <div name="home" className="w-full h-screen bg-[#0a192f]">
       {/* Container */}
       <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
-        <p className="text-2xl text-pink-600">¡Hola Mundo! Soy Joaquín García</p>
+        <h1 className="text-2xl text-pink-600">
+          ¡Hola Mundo! <img src="https://raw.githubusercontent.com/TheDudeThatCode/TheDudeThatCode/master/Assets/Earth.gif" width="24px" alt="" className="inline" /> Soy Joaquín García
+        </h1>
         <h2 className="text-4xl sm:text-7xl font-bold text-[#8892b0]">Desarrollador full stack</h2>
         <div>
           <br />
