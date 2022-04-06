@@ -27,12 +27,12 @@ function Navbar() {
         </li>
         <li>
           <Link activeClass="active" to="about" spy={true} smooth={true} offset={50} duration={500}>
-            Sobre mi
+            Sobre mí
           </Link>
         </li>
         <li>
           <Link activeClass="active" to="skills" spy={true} smooth={true} offset={50} duration={500}>
-            Tecnologias
+            Tecnologías
           </Link>
         </li>
         <li>
@@ -56,27 +56,27 @@ function Navbar() {
       <ul className={!nav ? "hidden" : "absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center"}>
         <li className="py-6 text-4xl">
           <Link onClick={handleClick} activeClass="active" to="home" spy={true} smooth={true} offset={50} duration={500}>
-            Home
+            Inicio
           </Link>
         </li>
         <li className="py-6 text-4xl">
           <Link onClick={handleClick} activeClass="active" to="about" spy={true} smooth={true} offset={50} duration={500}>
-            About
+            Sobre mí
           </Link>
         </li>
         <li className="py-6 text-4xl">
           <Link onClick={handleClick} activeClass="active" to="skills" spy={true} smooth={true} offset={50} duration={500}>
-            Skills
+            Tecnologías
           </Link>
         </li>
         <li className="py-6 text-4xl">
           <Link onClick={handleClick} activeClass="active" to="work" spy={true} smooth={true} offset={50} duration={500}>
-            Work
+            Proyectos
           </Link>
         </li>
         <li className="py-6 text-4xl">
           <Link onClick={handleClick} activeClass="active" to="contact" spy={true} smooth={true} offset={50} duration={500}>
-            Contact
+            Contacto
           </Link>
         </li>
       </ul>
@@ -112,7 +112,7 @@ function Navbar() {
             </CopyToClipboard>
           </li>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]">
-            <a onClick={(e) => handleRedirect(e, "https://drive.google.com/file/d/1k78UoXZ1d2PyAvoMWTPdq8u5D_0vUh-i/view")} className="flex justify-between items-center w-full text-gray-300" href="/">
+            <a onClick={(e) => handleRedirect(e, "https://drive.google.com/file/d/19OoBnjwylxF1N9tB5LhK9MG-E5YVkZhz/view")} className="flex justify-between items-center w-full text-gray-300" href="/">
               Curriculum
               <BsFillPersonLinesFill size={30}></BsFillPersonLinesFill>
             </a>
