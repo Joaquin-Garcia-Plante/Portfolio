@@ -21,27 +21,62 @@ function Navbar() {
       {/* Menu */}
       <ul className="hidden md:flex">
         <li>
-          <Link activeClass="active" to="home" spy={true} smooth={true} offset={50} duration={500}>
+          <Link
+            activeClass="active"
+            to="home"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+          >
             Inicio
           </Link>
         </li>
         <li>
-          <Link activeClass="active" to="about" spy={true} smooth={true} offset={50} duration={500}>
+          <Link
+            activeClass="active"
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+          >
             Sobre mí
           </Link>
         </li>
         <li>
-          <Link activeClass="active" to="skills" spy={true} smooth={true} offset={50} duration={500}>
+          <Link
+            activeClass="active"
+            to="skills"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+          >
             Tecnologías
           </Link>
         </li>
         <li>
-          <Link activeClass="active" to="work" spy={true} smooth={true} offset={50} duration={500}>
+          <Link
+            activeClass="active"
+            to="work"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+          >
             Proyectos
           </Link>
         </li>
         <li>
-          <Link activeClass="active" to="contact" spy={true} smooth={true} offset={50} duration={500}>
+          <Link
+            activeClass="active"
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+          >
             Contacto
           </Link>
         </li>
@@ -53,29 +88,75 @@ function Navbar() {
       </div>
 
       {/* Mobile Menu */}
-      <ul className={!nav ? "hidden" : "absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center"}>
+      <ul
+        className={
+          !nav
+            ? "hidden"
+            : "absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center"
+        }
+      >
         <li className="py-6 text-4xl">
-          <Link onClick={handleClick} activeClass="active" to="home" spy={true} smooth={true} offset={50} duration={500}>
+          <Link
+            onClick={handleClick}
+            activeClass="active"
+            to="home"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+          >
             Inicio
           </Link>
         </li>
         <li className="py-6 text-4xl">
-          <Link onClick={handleClick} activeClass="active" to="about" spy={true} smooth={true} offset={50} duration={500}>
+          <Link
+            onClick={handleClick}
+            activeClass="active"
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+          >
             Sobre mí
           </Link>
         </li>
         <li className="py-6 text-4xl">
-          <Link onClick={handleClick} activeClass="active" to="skills" spy={true} smooth={true} offset={50} duration={500}>
+          <Link
+            onClick={handleClick}
+            activeClass="active"
+            to="skills"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+          >
             Tecnologías
           </Link>
         </li>
         <li className="py-6 text-4xl">
-          <Link onClick={handleClick} activeClass="active" to="work" spy={true} smooth={true} offset={50} duration={500}>
+          <Link
+            onClick={handleClick}
+            activeClass="active"
+            to="work"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+          >
             Proyectos
           </Link>
         </li>
         <li className="py-6 text-4xl">
-          <Link onClick={handleClick} activeClass="active" to="contact" spy={true} smooth={true} offset={50} duration={500}>
+          <Link
+            onClick={handleClick}
+            activeClass="active"
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+          >
             Contacto
           </Link>
         </li>
@@ -86,13 +167,25 @@ function Navbar() {
       <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
         <ul>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-500">
-            <a onClick={(e) => handleRedirect(e, "https://www.linkedin.com/in/joaquingplante/")} className="flex justify-between items-center w-full text-gray-300" href="/">
+            <a
+              onClick={(e) =>
+                handleRedirect(e, "https://www.linkedin.com/in/joaquingplante/")
+              }
+              className="flex justify-between items-center w-full text-gray-300"
+              href="/"
+            >
               LikedIn
               <FaLinkedin size={30}></FaLinkedin>
             </a>
           </li>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]">
-            <a onClick={(e) => handleRedirect(e, "https://github.com/Joaquin-Garcia-Plante")} className="flex justify-between items-center w-full text-gray-300" href="/">
+            <a
+              onClick={(e) =>
+                handleRedirect(e, "https://github.com/Joaquin-Garcia-Plante")
+              }
+              className="flex justify-between items-center w-full text-gray-300"
+              href="/"
+            >
               GitHub
               <FaGithub size={30}></FaGithub>
             </a>
@@ -103,7 +196,10 @@ function Navbar() {
               <button
                 onClick={(e) => {
                   alert("Email copiado en el portapapeles");
-                  handleRedirect(e, "https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox");
+                  handleRedirect(
+                    e,
+                    "https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox"
+                  );
                 }}
                 className="flex justify-between items-center w-full text-gray-300"
               >
@@ -112,7 +208,16 @@ function Navbar() {
             </CopyToClipboard>
           </li>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]">
-            <a onClick={(e) => handleRedirect(e, "https://drive.google.com/file/d/19OoBnjwylxF1N9tB5LhK9MG-E5YVkZhz/view")} className="flex justify-between items-center w-full text-gray-300" href="/">
+            <a
+              onClick={(e) =>
+                handleRedirect(
+                  e,
+                  "https://drive.google.com/file/d/1cH7mXD2KpfD_CfkHAozhyEl_GHQ9OT9n/view?usp=sharing"
+                )
+              }
+              className="flex justify-between items-center w-full text-gray-300"
+              href="/"
+            >
               Curriculum
               <BsFillPersonLinesFill size={30}></BsFillPersonLinesFill>
             </a>
