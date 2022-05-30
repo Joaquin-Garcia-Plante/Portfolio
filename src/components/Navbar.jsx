@@ -212,7 +212,7 @@ function Navbar() {
               onClick={(e) =>
                 handleRedirect(
                   e,
-                  "https://drive.google.com/file/d/1cH7mXD2KpfD_CfkHAozhyEl_GHQ9OT9n/view?usp=sharing"
+                  "https://drive.google.com/file/d/1AflmcJrUQKdGDWF0bZWmjR0BqXHTjwbk/view?usp=sharing"
                 )
               }
               className="flex justify-between items-center w-full text-gray-300"
