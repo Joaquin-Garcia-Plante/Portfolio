@@ -36,10 +36,10 @@ function Work() {
               <span className="text-xl font-bold text-white tracking-wider pl-4">
                 Ediciones Aventador
               </span>
-              <p className="pl-4 text-xs">
+              <p className="p-4 text-xs">
                 Implementación de template para Ediciones Aventador. Se trata de
-                una web organizacional para la editorial. Tecnologías
-                utilizadas: React, Node, Bootstrap.
+                una web organizacional para la editorial. <br></br> Tecnologías
+                utilizadas: React, Node.js, Bootstrap.
               </p>
               <div className="text-center mb-9">
                 <button
@@ -61,10 +61,11 @@ function Work() {
               <span className="text-xl font-bold text-white tracking-wider pl-4">
                 Travel App
               </span>
-              <p className="pl-4 text-xs">
+              <p className="p-4 text-xs">
                 Desarrollo de un E-Commerce en el cual los usuarios pueden
                 adquirir excursiones por medio de una aplicacion web full-stack.
-                Tecnologías implementadas: Tailwind - React - Redux - NodeJS -
+                <br />
+                Tecnologías implementadas: Tailwind - React - Redux - Node.js -
                 Express -MongoDB - Mongoose -Stripe.
               </p>
               <div className="text-center mb-9">
@@ -94,18 +95,17 @@ function Work() {
             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
           >
             {/* Hover Effects */}
-            <div className="opacity-0 group-hover:opacity-100 mt-6">
-              <span className="text-xl font-bold text-white tracking-wider pl-4">
+            <div className="opacity-0 group-hover:opacity-100 mt-10">
+              <span className="text-xl font-bold text-white tracking-wider p-4">
                 Food App
               </span>
-              <p className="pl-4 text-xs">
+              <p className="p-4 text-xs">
                 Desarrollo de una Single Page Application, que consume datos de
-                la API#spoonacularapi y una base de datos montada con
-                PostgreSQL, a través de un BackEnd desarrollado en Node.JS,
-                utilizando Express. Para el Front End se utilizó React, Redux
-                como state management y CSS para darleestilos. La misma tiene
-                funcionalidades tales como buscar, filtrar/ordenar recetas
-                ycrear tu propia receta.
+                la API #spoonacularapi. <br /> La misma tiene funcionalidades
+                tales como buscar, filtrar/ordenar recetas y crear tu propia
+                receta.
+                <br /> Tecnologías implementadas: React - Redux - Node.js -
+                Express - PostgreSQL
               </p>
               <div className="text-center mb-9">
                 <button
@@ -134,16 +134,16 @@ function Work() {
             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
           >
             {/* Hover Effects */}
-            <div className="opacity-0 group-hover:opacity-100 mt-6">
+            <div className="opacity-0 group-hover:opacity-100 mt-10">
               <span className="text-xl font-bold text-white tracking-wider pl-4">
                 To-Do App
               </span>
-              <p className="pl-4 text-xs">
+              <p className="p-4 text-xs">
                 Desarrollo de una App que le permite a un usuario agregar tareas
-                que se iránrenderizando en tiempo real en pantalla. Una vez
-                completada la misma se puedetachar o eliminar. Además pueden
-                seleccionar distintos fondos para la aplicación. Tecnologías
-                empleadas: React JS - CSS - Javascript
+                que se irán renderizando en tiempo real en pantalla. Una vez
+                completada la misma se puede tachar o eliminar. Además pueden
+                seleccionar distintos fondos para la aplicación. <br />
+                Tecnologías empleadas: React.js - Node.js - CSS - Javascript
               </p>
               <div className="text-center mb-9">
                 <button
@@ -175,12 +175,12 @@ function Work() {
               <span className="text-xl font-bold text-white tracking-wider pl-4">
                 Weather App
               </span>
-              <p className="pl-4 text-xs">
+              <p className="p-4 text-xs">
                 Desarrollo de una App que consume datos de la API #Weather API,
-                utilizando React yCSS para darle estilos a todos sus
-                componentes. La misma tiene funcionalidades talescomo buscar
+                utilizando React y CSS para darle estilos a todos sus
+                componentes. La misma tiene funcionalidades tales como buscar
                 ciudades de todo el mundo y ver los detalles del clima de cada
-                una deellas en tiempo real.
+                una de ellas en tiempo real.
               </p>
               <div className="text-center mb-9">
                 <button
@@ -213,7 +213,7 @@ function Work() {
               <span className="text-xl font-bold text-white tracking-wider">
                 Aplicacion Frontend
               </span>
-              <p className="p-4">Desarrollada con ReactJS</p>
+              <p className="p-4 text-xs">Desarrollada con React.js</p>
               <div className="pt-8 text-center">
                 <button
                   onClick={() =>

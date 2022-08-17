@@ -31,7 +31,7 @@ function About() {
           <div></div>
         </div>
         <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4">
-          <div className="sm:text-right text-4xl font-bold">
+          <div className="sm:text-letf text-4xl font-bold">
             <p>
               Hola, soy Joaquín. <br /> Es un placer que esté visitando mi web
               personal. <br /> Siéntase libre de explorarla cuanto desee.
