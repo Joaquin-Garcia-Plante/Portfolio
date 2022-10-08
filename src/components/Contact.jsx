@@ -9,7 +9,7 @@ function Contact() {
       <form
         method="POST"
         action="https://getform.io/f/0163f13a-dd24-49f0-8b48-dfbc39bf635a"
-        className="flex flex-col max-w-[600px] w-full"
+        className="flex flex-col max-w-[600px] w-full pt-8"
       >
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 border-pink-600 text-gray-300">
@@ -23,7 +23,7 @@ function Contact() {
         <input
           className="bg-[#ccd6f6] p-2"
           type="text"
-          placeholder="Name"
+          placeholder="Nombre y apellido"
           name="name"
         />
         <input
@@ -36,7 +36,7 @@ function Contact() {
           className="bg-[#ccd6f6] p-2"
           name="message"
           rows="10"
-          placeholder="Message"
+          placeholder="Mensaje"
         ></textarea>
         <button className="text-white border-2 hover:bg-pink-600 hover:border-pink-600 px-4 py-3 my-8 mx-auto flex items-center">
           Enviar
