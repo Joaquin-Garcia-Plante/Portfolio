@@ -4,9 +4,45 @@ import screenSize from "../hooks/useScreenSize";
 function About() {
   let size = screenSize();
   const responsive = function () {
-    if (size.width < 376) {
+    if (size.width < 545 && size.width > 390) {
       return (
         <div>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+        </div>
+      );
+    }
+    if (size.width <= 390) {
+      return (
+        <div>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+        </div>
+      );
+    }
+    if (size.width < 375) {
+      return (
+        <div>
+          <br />
+          <br />
           <br />
           <br />
           <br />
