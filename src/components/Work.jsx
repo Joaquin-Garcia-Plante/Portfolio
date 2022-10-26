@@ -1,7 +1,4 @@
 import React from "react";
-
-import WorkImg from "../assets/workImg.jpeg";
-import realEstate from "../assets/realestate.jpg";
 import Clima from "../assets/Clima.png";
 import Defi from "../assets/Defi.png";
 import Food from "../assets/Food.png";
