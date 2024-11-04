@@ -7,7 +7,30 @@ import Node from "../assets/node.png";
 import Mongo from "../assets/mongo.png";
 import Git from "../assets/git-icon.png";
 import PG from "../assets/postgresql.png";
+import Next from "../assets/Next.png";
+import GCP from "../assets/gcp.png";
+import { useState, useEffect } from "react";
 function Skills() {
+  const [windowSize, setWindowSize] = useState({
+    width: window.innerWidth,
+    height: window.innerHeight,
+  });
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    };
+
+    // Escucha el evento de redimensionamiento de la ventana
+    window.addEventListener("resize", handleResize);
+
+    // Elimina el event listener al desmontar el componente
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+  console.log(windowSize);
   return (
     <div name="skills" className=" w-full h-screen bg-[#0a192f] text-gray-300">
       {/* Container */}
@@ -55,7 +78,29 @@ function Skills() {
             <img className="w-20 mx-auto" src={Git} alt="HTML ICON" />
             <p className="my-4">Git</p>
           </div>
+          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+            <img className="w-20 mx-auto" src={Git} alt="HTML ICON" />
+            <p className="my-4">Git</p>
+          </div>
+          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+            <img className="w-20 mx-auto" src={Next} alt="HTML ICON" />
+            <p className="my-4">NextJS</p>
+          </div>  <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+            <img className="w-20 mx-auto" src={GCP} alt="HTML ICON" />
+            <p className="my-4">Google Cloud Run</p>
+          </div>
         </div>
+        {windowSize.width < 640 ? (
+          <>
+            <br />
+            <br />
+            <br />
+            <br /> <br /> <br />
+            <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
+          </>
+        ) : (
+          ""
+        )}
       </div>
     </div>
   );
