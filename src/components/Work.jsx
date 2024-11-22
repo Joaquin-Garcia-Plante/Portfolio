@@ -1,20 +1,65 @@
-import React from "react";
-import Clima from "../assets/Clima.png";
-import Defi from "../assets/Defi.png";
-import Food from "../assets/Food.png";
-import Todo from "../assets/Todo.png";
-import Aventador from "../assets/Aventador.png";
-import Travel from "../assets/Travel.png";
+import React, { useEffect, useState } from 'react';
+import Clima from '../assets/Clima.png';
+import Defi from '../assets/Defi.png';
+import Food from '../assets/Food.png';
+import Todo from '../assets/Todo.png';
+import Aventador from '../assets/Aventador.png';
+import Travel from '../assets/Travel.png';
 
 function Work() {
-  const handleClick = (url) => {
+  const handleClick = url => {
     window.open(url);
   };
+  const [windowSize, setWindowSize] = useState({
+    width: window.innerWidth,
+    height: window.innerHeight,
+  });
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    };
+
+    // Escucha el evento de redimensionamiento de la ventana
+    window.addEventListener('resize', handleResize);
+
+    // Elimina el event listener al desmontar el componente
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+  console.log(windowSize);
+
   return (
     <div name="work" className="w-full md:h-screen text-gray-300 bg-[#0a192f]">
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div className="pb-8">
-          <br />
+          {windowSize.width < 502 ? (
+            <>
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+            </>
+          ) : (
+            ''
+          )}
+
           <p className="text-4xl font-bold inline border-b-4 text-gray-300 border-pink-600">
             Proyectos
           </p>
@@ -40,7 +85,7 @@ function Work() {
               </p>
               <div className="text-center mb-9">
                 <button
-                  onClick={() => handleClick("https://aventador.com.ar/")}
+                  onClick={() => handleClick('https://aventador.com.ar/')}
                   className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg"
                 >
                   Web
@@ -68,7 +113,7 @@ function Work() {
               <div className="text-center mb-9">
                 <button
                   onClick={() =>
-                    handleClick("https://deploy-travelapp.herokuapp.com/")
+                    handleClick('https://deploy-travelapp.herokuapp.com/')
                   }
                   className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg"
                 >
@@ -77,7 +122,7 @@ function Work() {
                 <button
                   onClick={() =>
                     handleClick(
-                      "https://github.com/gianbr/TravelApp-Group-Project"
+                      'https://github.com/gianbr/TravelApp-Group-Project',
                     )
                   }
                   className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg"
@@ -107,7 +152,7 @@ function Work() {
               <div className="text-center mb-9">
                 <button
                   onClick={() =>
-                    handleClick("https://pi-food-deploy.vercel.app")
+                    handleClick('https://pi-food-deploy.vercel.app')
                   }
                   className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg"
                 >
@@ -116,7 +161,7 @@ function Work() {
                 <button
                   onClick={() =>
                     handleClick(
-                      "https://github.com/Joaquin-Garcia-Plante/PI-Food"
+                      'https://github.com/Joaquin-Garcia-Plante/PI-Food',
                     )
                   }
                   className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg"
@@ -145,7 +190,7 @@ function Work() {
               <div className="text-center mb-9">
                 <button
                   onClick={() =>
-                    handleClick("https://to-do-kappa-lilac.vercel.app/")
+                    handleClick('https://to-do-kappa-lilac.vercel.app/')
                   }
                   className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg"
                 >
@@ -153,7 +198,7 @@ function Work() {
                 </button>
                 <button
                   onClick={() =>
-                    handleClick("https://github.com/Joaquin-Garcia-Plante/ToDo")
+                    handleClick('https://github.com/Joaquin-Garcia-Plante/ToDo')
                   }
                   className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg"
                 >
@@ -182,7 +227,7 @@ function Work() {
               <div className="text-center mb-9">
                 <button
                   onClick={() =>
-                    handleClick("https://weather-app-taupe-phi.vercel.app/")
+                    handleClick('https://weather-app-taupe-phi.vercel.app/')
                   }
                   className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg"
                 >
@@ -191,7 +236,7 @@ function Work() {
                 <button
                   onClick={() =>
                     handleClick(
-                      "https://github.com/Joaquin-Garcia-Plante/Weather-App"
+                      'https://github.com/Joaquin-Garcia-Plante/Weather-App',
                     )
                   }
                   className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg"
@@ -215,7 +260,7 @@ function Work() {
                 <button
                   onClick={() =>
                     handleClick(
-                      "https://defi-dt9eod70t-joaquin-garcia-plante.vercel.app/"
+                      'https://defi-dt9eod70t-joaquin-garcia-plante.vercel.app/',
                     )
                   }
                   className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg"
@@ -225,7 +270,7 @@ function Work() {
                 <button
                   onClick={() =>
                     handleClick(
-                      "https://github.com/Joaquin-Garcia-Plante/DeFi-App"
+                      'https://github.com/Joaquin-Garcia-Plante/DeFi-App',
                     )
                   }
                   className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg"

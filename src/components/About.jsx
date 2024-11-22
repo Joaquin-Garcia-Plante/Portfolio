@@ -1,5 +1,5 @@
-import React from "react";
-import screenSize from "../hooks/useScreenSize";
+import React from 'react';
+import screenSize from '../hooks/useScreenSize';
 
 function About() {
   let size = screenSize();

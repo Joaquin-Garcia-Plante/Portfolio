@@ -1,15 +1,15 @@
-import React from "react";
-import HTML from "../assets/html.png";
-import CSS from "../assets/css.png";
-import JavaScript from "../assets/javascript.png";
-import ReactImg from "../assets/react.png";
-import Node from "../assets/node.png";
-import Mongo from "../assets/mongo.png";
-import Git from "../assets/git-icon.png";
-import PG from "../assets/postgresql.png";
-import Next from "../assets/Next.png";
-import GCP from "../assets/gcp.png";
-import { useState, useEffect } from "react";
+import React from 'react';
+import HTML from '../assets/html.png';
+import CSS from '../assets/css.png';
+import JavaScript from '../assets/javascript.png';
+import ReactImg from '../assets/react.png';
+import Node from '../assets/node.png';
+import Mongo from '../assets/mongo.png';
+import Git from '../assets/git-icon.png';
+import PG from '../assets/postgresql.png';
+import Next from '../assets/Next.png';
+import GCP from '../assets/gcp.png';
+import { useState, useEffect } from 'react';
 function Skills() {
   const [windowSize, setWindowSize] = useState({
     width: window.innerWidth,
@@ -25,10 +25,10 @@ function Skills() {
     };
 
     // Escucha el evento de redimensionamiento de la ventana
-    window.addEventListener("resize", handleResize);
+    window.addEventListener('resize', handleResize);
 
     // Elimina el event listener al desmontar el componente
-    return () => window.removeEventListener("resize", handleResize);
+    return () => window.removeEventListener('resize', handleResize);
   }, []);
   console.log(windowSize);
   return (
@@ -36,6 +36,79 @@ function Skills() {
       {/* Container */}
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div>
+          {windowSize.width <= 624 && windowSize.width > 280 ? (
+            <>
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+            </>
+          ) : (
+            <>
+              {windowSize.width < 502 ? (
+                <>
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                </>
+              ) : (
+                ''
+              )}
+            </>
+          )}
+
           <p className="text-4xl font-bold inline border-b-4 border-pink-600">
             Tecnologías
           </p>
@@ -85,7 +158,8 @@ function Skills() {
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
             <img className="w-20 mx-auto" src={Next} alt="HTML ICON" />
             <p className="my-4">NextJS</p>
-          </div>  <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+          </div>{' '}
+          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
             <img className="w-20 mx-auto" src={GCP} alt="HTML ICON" />
             <p className="my-4">Google Cloud Run</p>
           </div>
@@ -99,7 +173,7 @@ function Skills() {
             <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
           </>
         ) : (
-          ""
+          ''
         )}
       </div>
     </div>
